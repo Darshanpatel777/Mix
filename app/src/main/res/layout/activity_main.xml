@@ -5,10 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#ED7272"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"/>
 
     <Switch
         android:id="@+id/btnswicth"
@@ -20,50 +24,49 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-<!--        group ma chek thay-->
+        <!--        group ma chek thay-->
 
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/item1"
-            android:text="Item 1"/>
-
-        <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Item 1" />
+
+        <RadioButton
             android:id="@+id/item2"
-            android:text="Item 2"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item 2" />
 
     </RadioGroup>
 
 
     <RadioButton
+        android:id="@+id/item3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/item3"
-        android:text="Item 3"/>
+        android:text="Item 3" />
 
 
     <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/item4"
-        android:text="Item 4"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item 4" />
 
 
     <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/Male"
-        android:text="Male"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male" />
 
 
     <CheckBox
+        android:id="@+id/Female"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/Female"
-        android:text="Female"/>
-
+        android:text="Female" />
 
 
 </LinearLayout>

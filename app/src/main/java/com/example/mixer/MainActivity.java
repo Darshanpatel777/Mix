@@ -1,10 +1,12 @@
 package com.example.mixer;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.Switch;
 
@@ -19,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     Switch btnswicth;
     RadioButton r1, r2, r3, r4;
     CheckBox Male, Female;
-
+ImageView image;
     Boolean isckeck3 = true, isckeck4 = true;
 
     @Override
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         btnswicth = findViewById(R.id.btnswicth);
+        image = findViewById(R.id.image);
         r1 = findViewById(R.id.item1);
         r2 = findViewById(R.id.item2);
         r3 = findViewById(R.id.item3);
@@ -36,6 +39,11 @@ public class MainActivity extends AppCompatActivity {
         Male = findViewById(R.id.Male);
         Female = findViewById(R.id.Female);
 
+        String uriString = getIntent().getStringExtra("image");
+
+        Uri imagUri = Uri.parse(uriString);
+
+        image.setImageURI(imagUri);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
