@@ -44,7 +44,8 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View v) {
 
                 if(imageUri != null) {
-                    startActivity(new Intent(MainActivity2.this, MainActivity.class).putExtra("image", imageUri.toString()));
+                    startActivity(new Intent(MainActivity2.this, MainActivity.class)
+                            .putExtra("image", imageUri.toString()));
                     finish();
                 }
             }
