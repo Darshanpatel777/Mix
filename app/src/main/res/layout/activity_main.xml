@@ -9,10 +9,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/image"/>
+
 
     <Switch
         android:id="@+id/btnswicth"
@@ -67,6 +64,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Female" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"/>
 
 
 </LinearLayout>
